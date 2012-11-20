@@ -1,0 +1,36 @@
+git init
+#инициализация папки в качестве репозитория
+
+git add file.rb
+#добавление в гит файла для git-комманд
+
+git add .
+#добавление всего содержимого папки для git-комманд
+
+git commit -m 'some commit text'
+#добавление коммита
+(коммитить можно только после изменеий)
+
+git remote add origin git@github.com:zenmudd/111minutes.git
+#указание репозитория на гитхабе
+
+git push origin master
+#отправка данных на репозиторий
+
+git push origin master -f
+#отправка данных на репозиторий в принудительном порядке
+
+git clone git@github.com:zenmudd/111minutes.git
+#копирование данных с репозитория в существующую папку
+
+git reset --hard HEAD~1
+#удаление последних внесений на репозиторий
+
+git reset --hard HEAD
+#удаление ВСЕХ изменений на репозиторий
+
+git reset --hard <commit-id>
+#удаление коммита по id
+
+git log
+#просмотр коммитов и их id
